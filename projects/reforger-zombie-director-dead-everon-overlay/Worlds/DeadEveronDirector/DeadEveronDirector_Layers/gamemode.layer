@@ -1,0 +1,90 @@
+SCR_AIWorld "6A44D8F71E1B2030" : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A297F9E52831}" {
+     NavmeshFile "Saves/Navmesh/dead_everon_smoke_soldiers_patch.nmn"
+    }
+   }
+  }
+ }
+ coords 6310.000 109.000 5290.000
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 6310.000 109.000 5290.000
+}
+SCR_GameModeEditor "6A44D8F71E1B2011" : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.et" {
+ components {
+  OCD_ZombieDirectorGameModeComponent "{6A44D8F71E1B2012}" {
+   m_sConcreteProfileId "dead_everon_bacon_concrete"
+   m_bRelocateFirstPlayer 0
+   m_vPreferredPlayerStart 6310.000 109.000 5290.000
+   m_fPlayerRelocationRadius 140
+  }
+ }
+ coords 6310.000 109.000 5290.000
+ {
+  SCR_EditorSettingsEntity "6A44D8F71E1B2013" {
+   coords 0 0 0
+   m_bIsUnlimitedEditorLegal 1
+  }
+  SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+  }
+  RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
+  }
+  ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+  }
+  SCR_LoadoutManager LoadoutManager_Editor1 : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
+  }
+ }
+}
+GenericEntity "6A44D8F71E1B2040" {
+ components {
+  OCD_ZombieDirectorZoneComponent "{6A44D8F71E1B2041}" {
+   m_sZoneId "smoke_village_edge"
+   m_sTagsCsv "village,road"
+   m_fRadius 72
+   m_fMinSpawnDistance 18
+   m_fMaxSpawnDistance 40
+   m_fDespawnDistance 150
+   m_iLocalBudgetCap 12
+   m_fBaseCooldownSeconds 18
+   m_fAmbientWeight 1.15
+   m_fFieldWeight 1.0
+   m_fBaseWeight 0.8
+   m_sAllowedTemplateIdsCsv "dead_everon_tier1_sweep,dead_everon_civilian_drifters"
+   m_vSweepRoutePoint01 6347.000 101.000 5318.000
+   m_vSweepRoutePoint02 6346.000 101.000 5317.000
+   m_vSweepRoutePoint03 6344.000 100.000 5316.000
+   m_vSweepRoutePoint04 6342.000 100.000 5315.000
+   m_bCycleWaypoints 1
+   m_bAllowExternalHints 1
+  }
+ }
+ coords 6346.000 101.000 5317.000
+}
+GenericEntity "6A44D8F71E1B2050" {
+ components {
+  OCD_ZombieDirectorZoneComponent "{6A44D8F71E1B2051}" {
+   m_sZoneId "smoke_lab_corridor"
+   m_sTagsCsv "lab,quarantine,roadblock"
+   m_fRadius 46
+   m_fMinSpawnDistance 12
+   m_fMaxSpawnDistance 28
+   m_fDespawnDistance 120
+   m_iLocalBudgetCap 10
+   m_fBaseCooldownSeconds 20
+   m_fAmbientWeight 1.1
+   m_fFieldWeight 0.6
+   m_fBaseWeight 1.2
+   m_sAllowedTemplateIdsCsv "dead_everon_quarantine_spike,dead_everon_checkpoint_mix"
+   m_vSweepRoutePoint01 6271.000 112.000 5238.000
+   m_vSweepRoutePoint02 6272.000 112.000 5243.000
+   m_vSweepRoutePoint03 6276.000 112.000 5247.000
+   m_vSweepRoutePoint04 6278.000 112.000 5249.000
+   m_bCycleWaypoints 1
+   m_bAllowExternalHints 1
+  }
+ }
+ coords 6274.000 112.000 5244.000
+}

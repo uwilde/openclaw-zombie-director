@@ -1,0 +1,10 @@
+Bacon_622120A5448725E3_InfectedCharacter : "{D3C8597FDF4A986F}622120A5448725E3/Prefabs/Characters/Variants/Variant_CIV_Regular4.et" {
+ ID "520EC961A090B1EE"
+ components {
+  ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   Agenttemplate "{B4C861A6DA2F5E05}AI/AIAgents/SCR_ChimeraAIAgentFull.et"
+   OverrideAIBehaviorData "{480A01B2DFD2B5E2}622120A5448725E3/AI/BehaviorTrees/InfectedCharacterRoot.bt"
+   EnableAI 1
+  }
+ }
+}

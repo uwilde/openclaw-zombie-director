@@ -1,0 +1,13 @@
+{
+  "m_sConcreteProfileId": "dead_everon_bacon_concrete",
+  "m_RestBridge": {
+    "m_bEnabled": true,
+    "m_sBaseUrl": "https://director.example.com/",
+    "m_sHintRoute": "reforger/zombie-director/hints",
+    "m_sSnapshotRoute": "reforger/zombie-director/snapshot",
+    "m_sToken": "replace-with-a-long-random-shared-token",
+    "m_fPollIntervalSeconds": 0.75,
+    "m_bPostSnapshots": true,
+    "m_sProfileOverridePath": "openclaw-zombie-director/rest-bridge.override.json"
+  }
+}

@@ -1,0 +1,15 @@
+GameProject {
+ ID "OpenClaw-Zombie-Director"
+ GUID "6F8B1A34C9D24011"
+ TITLE "OpenClaw Zombie Director"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC { }
+  GameProjectConfig XBOX_ONE { }
+  GameProjectConfig XBOX_SERIES { }
+  GameProjectConfig PS4 { }
+  GameProjectConfig HEADLESS { }
+ }
+}

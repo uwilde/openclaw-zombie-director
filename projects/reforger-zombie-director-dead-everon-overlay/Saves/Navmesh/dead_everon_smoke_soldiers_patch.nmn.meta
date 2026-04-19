@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9376E6C76897BDAB}Saves/Navmesh/dead_everon_smoke_soldiers_patch.nmn"
+ Configurations {
+  NavMeshResourceClass PC {
+  }
+  NavMeshResourceClass XBOX_ONE : PC {
+  }
+  NavMeshResourceClass XBOX_SERIES : PC {
+  }
+  NavMeshResourceClass PS4 : PC {
+  }
+  NavMeshResourceClass PS5 : PC {
+  }
+  NavMeshResourceClass HEADLESS : PC {
+  }
+ }
+}

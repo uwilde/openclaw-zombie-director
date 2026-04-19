@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D1A5F120A38B41C1}Prefabs/Compatibility/Bacon/Characters/Variants/OCD_BaconZombie_CIV_BusinessMan1_Compat.et"
+ Configurations {
+  ETResourceClass PC {
+  }
+  ETResourceClass XBOX_ONE : PC {
+  }
+  ETResourceClass XBOX_SERIES : PC {
+  }
+  ETResourceClass PS4 : PC {
+  }
+  ETResourceClass HEADLESS : PC {
+  }
+ }
+}

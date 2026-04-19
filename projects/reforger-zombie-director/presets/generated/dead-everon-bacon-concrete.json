@@ -1,0 +1,345 @@
+﻿{
+    "generatedOn":  "2026-04-17",
+    "profile":  {
+                    "id":  "dead_everon_bacon_concrete",
+                    "name":  "Dead Everon + Bacon Zombies Concrete Stack",
+                    "style":  "concrete Dead Everon survival baseline with real Bacon Zombies prefab bindings",
+                    "recommended":  true
+                },
+    "map":  {
+                "id":  "dead_everon",
+                "name":  "Dead Everon",
+                "source":  "workshop",
+                "url":  "https://reforger.armaplatform.com/workshop/5D58A217A9611AFB",
+                "terrainStyle":  "post-apocalyptic Everon with survival and STALKER flavor",
+                "directorStyle":  "quiet dread punctuated by ugly localized spikes",
+                "recommendedZoneTags":  [
+                                            "base",
+                                            "village",
+                                            "woods",
+                                            "checkpoint",
+                                            "ruin",
+                                            "anomaly",
+                                            "lab",
+                                            "quarantine",
+                                            "roadblock"
+                                        ],
+                "globalDefaults":  {
+                                       "thinkPeriodSeconds":  1.0,
+                                       "snapshotPeriodSeconds":  2.5,
+                                       "globalBudgetCap":  68,
+                                       "budgetRegenPerSecond":  2.0,
+                                       "maxActiveWaves":  10,
+                                       "quietSecondsBeforePressure":  55
+                                   },
+                "zoneDefaults":  {
+                                     "radius":  110,
+                                     "minSpawnDistance":  34,
+                                     "maxSpawnDistance":  96,
+                                     "despawnDistance":  235,
+                                     "localBudgetCap":  17,
+                                     "baseCooldownSeconds":  86
+                                 },
+                "zoneTagOverrides":  {
+                                         "lab":  {
+                                                     "localBudgetCap":  21,
+                                                     "baseCooldownSeconds":  58
+                                                 },
+                                         "quarantine":  {
+                                                            "localBudgetCap":  20,
+                                                            "baseCooldownSeconds":  64
+                                                        },
+                                         "woods":  {
+                                                       "radius":  95,
+                                                       "baseCooldownSeconds":  72
+                                                   },
+                                         "roadblock":  {
+                                                           "baseCooldownSeconds":  48
+                                                       }
+                                     },
+                "notes":  "Dead Everon should feel hostile but not noisy. Favor woods, ruins, quarantine corridors, and short reactive spikes. The concrete runtime pass uses script-authored encounter clusters aligned to real military-base entities when the packed map does not expose editable layers.",
+                "scenarioResources":  {
+                                          "scenarioConfig":  "{850C623AD7B97DC7}Missions/DeadEveron.conf",
+                                          "mapWorld":  "{C1B9167BF961081D}Saves/Dead Everon Map.ent",
+                                          "gameMasterWorld":  "{28C64AE6FF448403}Saves/Dead Everon Game Master.ent",
+                                          "recommendedWorkbenchWorld":  "Worlds/DeadEveronDirector/DeadEveronDirector.ent",
+                                          "recommendedWorkbenchAddon":  "workspace/projects/reforger-zombie-director-dead-everon-overlay"
+                                      },
+                "zoneArchetypes":  [
+                                       {
+                                           "id":  "dead_everon_base_perimeter",
+                                           "displayName":  "Dead Everon Base Perimeter",
+                                           "tagsCsv":  "base,roadblock,quarantine",
+                                           "radius":  95,
+                                           "minSpawnDistance":  30,
+                                           "maxSpawnDistance":  82,
+                                           "despawnDistance":  215,
+                                           "localBudgetCap":  18,
+                                           "baseCooldownSeconds":  58,
+                                           "ambientWeight":  1.05,
+                                           "fieldWeight":  0.75,
+                                           "baseWeight":  1.55,
+                                           "allowedTemplateIdsCsv":  "dead_everon_checkpoint_mix,dead_everon_tier1_sweep,dead_everon_horde_push",
+                                           "recommendedSweepWaypointPattern":  "zoneId_patrol_01,zoneId_patrol_02,zoneId_patrol_03",
+                                           "notes":  "Use at player safehouses, military perimeters, and high-value hold points."
+                                       },
+                                       {
+                                           "id":  "dead_everon_village_edge",
+                                           "displayName":  "Dead Everon Village Edge",
+                                           "tagsCsv":  "village,ruin,road",
+                                           "radius":  90,
+                                           "minSpawnDistance":  28,
+                                           "maxSpawnDistance":  74,
+                                           "despawnDistance":  195,
+                                           "localBudgetCap":  14,
+                                           "baseCooldownSeconds":  46,
+                                           "ambientWeight":  1.2,
+                                           "fieldWeight":  1.0,
+                                           "baseWeight":  0.7,
+                                           "allowedTemplateIdsCsv":  "dead_everon_civilian_drifters,dead_everon_tier1_sweep",
+                                           "recommendedSweepWaypointPattern":  "zoneId_lane_01,zoneId_lane_02,zoneId_lane_03",
+                                           "notes":  "Place on the outside edge of settlements so the horde feels like it is flowing in."
+                                       },
+                                       {
+                                           "id":  "dead_everon_forest_pursuit",
+                                           "displayName":  "Dead Everon Forest Pursuit",
+                                           "tagsCsv":  "woods,anomaly,road",
+                                           "radius":  100,
+                                           "minSpawnDistance":  34,
+                                           "maxSpawnDistance":  88,
+                                           "despawnDistance":  220,
+                                           "localBudgetCap":  15,
+                                           "baseCooldownSeconds":  54,
+                                           "ambientWeight":  1.15,
+                                           "fieldWeight":  1.1,
+                                           "baseWeight":  0.6,
+                                           "allowedTemplateIdsCsv":  "dead_everon_civilian_drifters,dead_everon_tier1_sweep",
+                                           "recommendedSweepWaypointPattern":  "zoneId_trail_01,zoneId_trail_02,zoneId_trail_03",
+                                           "notes":  "Good for long treeline chases and low-visibility pursuit."
+                                       },
+                                       {
+                                           "id":  "dead_everon_checkpoint_choke",
+                                           "displayName":  "Dead Everon Checkpoint Choke",
+                                           "tagsCsv":  "checkpoint,roadblock,base",
+                                           "radius":  72,
+                                           "minSpawnDistance":  24,
+                                           "maxSpawnDistance":  60,
+                                           "despawnDistance":  180,
+                                           "localBudgetCap":  16,
+                                           "baseCooldownSeconds":  40,
+                                           "ambientWeight":  1.0,
+                                           "fieldWeight":  1.0,
+                                           "baseWeight":  1.35,
+                                           "allowedTemplateIdsCsv":  "dead_everon_checkpoint_mix,dead_everon_tier1_sweep,dead_everon_quarantine_spike",
+                                           "recommendedSweepWaypointPattern":  "zoneId_gate_01,zoneId_gate_02",
+                                           "notes":  "Use for tollbooths, barricades, and narrow vehicle funnels."
+                                       },
+                                       {
+                                           "id":  "dead_everon_quarantine_corridor",
+                                           "displayName":  "Dead Everon Quarantine Corridor",
+                                           "tagsCsv":  "quarantine,lab,roadblock",
+                                           "radius":  68,
+                                           "minSpawnDistance":  18,
+                                           "maxSpawnDistance":  44,
+                                           "despawnDistance":  135,
+                                           "localBudgetCap":  18,
+                                           "baseCooldownSeconds":  34,
+                                           "ambientWeight":  1.15,
+                                           "fieldWeight":  0.6,
+                                           "baseWeight":  1.2,
+                                           "allowedTemplateIdsCsv":  "dead_everon_quarantine_spike,dead_everon_checkpoint_mix,dead_everon_horde_push",
+                                           "recommendedSweepWaypointPattern":  "zoneId_corridor_01,zoneId_corridor_02,zoneId_corridor_03",
+                                           "notes":  "This is the tight, intimate archetype for tents, fenced lanes, and evac corridors."
+                                       },
+                                       {
+                                           "id":  "dead_everon_lab_exterior",
+                                           "displayName":  "Dead Everon Lab Exterior",
+                                           "tagsCsv":  "lab,quarantine,ruin",
+                                           "radius":  78,
+                                           "minSpawnDistance":  22,
+                                           "maxSpawnDistance":  54,
+                                           "despawnDistance":  145,
+                                           "localBudgetCap":  20,
+                                           "baseCooldownSeconds":  42,
+                                           "ambientWeight":  1.1,
+                                           "fieldWeight":  0.7,
+                                           "baseWeight":  1.25,
+                                           "allowedTemplateIdsCsv":  "dead_everon_quarantine_spike,dead_everon_checkpoint_mix,dead_everon_horde_push",
+                                           "recommendedSweepWaypointPattern":  "zoneId_lab_01,zoneId_lab_02,zoneId_lab_03",
+                                           "notes":  "Reserve for climax spaces and hard pivots around lab or science compounds."
+                                       },
+                                       {
+                                           "id":  "dead_everon_refugee_road",
+                                           "displayName":  "Dead Everon Refugee Road",
+                                           "tagsCsv":  "road,ruin,village",
+                                           "radius":  86,
+                                           "minSpawnDistance":  32,
+                                           "maxSpawnDistance":  80,
+                                           "despawnDistance":  200,
+                                           "localBudgetCap":  14,
+                                           "baseCooldownSeconds":  48,
+                                           "ambientWeight":  1.05,
+                                           "fieldWeight":  1.15,
+                                           "baseWeight":  0.75,
+                                           "allowedTemplateIdsCsv":  "dead_everon_civilian_drifters,dead_everon_tier1_sweep",
+                                           "recommendedSweepWaypointPattern":  "zoneId_road_01,zoneId_road_02,zoneId_road_03",
+                                           "notes":  "Use for roads between villages, broken convoys, and evac routes."
+                                       }
+                                   ]
+            },
+    "packs":  [
+                  {
+                      "id":  "bacon_zombies",
+                      "name":  "Bacon Zombies",
+                      "role":  "core_actor_pack",
+                      "publicPresetStatus":  "supported",
+                      "url":  "https://reforger.armaplatform.com/workshop/622120A5448725E3-BaconZombies",
+                      "downloads":  475717,
+                      "rating":  97,
+                      "directorFit":  "Best default backbone for public zombie scenarios because it provides actual zombies and zombie groups.",
+                      "zoneBias":  {
+                                       "base":  1.3,
+                                       "field":  1.1,
+                                       "village":  1.25,
+                                       "woods":  1.15,
+                                       "checkpoint":  1.2,
+                                       "lab":  0.9
+                                   }
+                  }
+              ],
+    "templates":  [
+                      {
+                          "slot":  "dead_everon_civilian_drifters",
+                          "templateId":  "dead_everon_civilian_drifters",
+                          "spawnMode":  "ambient",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  3,
+                          "weight":  0.95,
+                          "directorUse":  "baseline Dead Everon roadside, ruin, and treeline pressure using the stable civilian infected group path",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "village,ruin,woods,road",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  "Concrete Dead Everon template built from the locally installed Bacon Zombies addon."
+                      },
+                      {
+                          "slot":  "dead_everon_checkpoint_mix",
+                          "templateId":  "dead_everon_checkpoint_mix",
+                          "spawnMode":  "checkpoint_pressure",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  4,
+                          "weight":  1.15,
+                          "directorUse":  "checkpoint and roadblock reinforcement using the stable civilian infected group path for compatibility",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "checkpoint,roadblock,base,quarantine",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  null
+                      },
+                      {
+                          "slot":  "dead_everon_quarantine_spike",
+                          "templateId":  "dead_everon_quarantine_spike",
+                          "spawnMode":  "panic_spike",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  4,
+                          "weight":  0.9,
+                          "directorUse":  "panic spike for quarantine corridors using the stable civilian infected group path",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "quarantine,lab,roadblock,checkpoint",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  null
+                      },
+                      {
+                          "slot":  "dead_everon_tier1_sweep",
+                          "templateId":  "dead_everon_tier1_sweep",
+                          "spawnMode":  "sweep_group",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  4,
+                          "weight":  1.35,
+                          "directorUse":  "routed sweep group for villages, roads, and ruin lanes using the stable civilian infected group",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "village,woods,road,ruin",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  null
+                      },
+                      {
+                          "slot":  "dead_everon_ussr_patrol_large",
+                          "templateId":  "dead_everon_ussr_patrol_large",
+                          "spawnMode":  "reinforcement_group",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  5,
+                          "weight":  1.0,
+                          "directorUse":  "compatibility fallback sweep for checkpoints and bases using the stable civilian infected group",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "checkpoint,base,roadblock,quarantine",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  null
+                      },
+                      {
+                          "slot":  "dead_everon_horde_push",
+                          "templateId":  "dead_everon_horde_push",
+                          "spawnMode":  "horde_event",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  6,
+                          "weight":  0.8,
+                          "directorUse":  "major pressure pulse for a losing base or a session lull using the stable civilian infected group path",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "base,quarantine,village,ruin",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  null
+                      },
+                      {
+                          "slot":  "dead_everon_heavy_brute",
+                          "templateId":  "dead_everon_heavy_brute",
+                          "spawnMode":  "boss_spike",
+                          "sourcePackId":  "bacon_zombies",
+                          "sourcePackName":  "Bacon Zombies",
+                          "budgetCost":  6,
+                          "weight":  0.25,
+                          "directorUse":  "legacy compatibility fallback that now resolves to the stable civilian infected group",
+                          "spawnAsGroupPrefab":  true,
+                          "groupPrefab":  "{E1C3B50CFCC34910}Prefabs/Compatibility/Bacon/Groups/OCD_BaconZombieGroup_CIV_Compatibility.et",
+                          "memberPrefabs":  [
+
+                                            ],
+                          "preferredZoneTagsCsv":  "base,lab,quarantine",
+                          "minMembers":  0,
+                          "maxMembers":  0,
+                          "notes":  null
+                      }
+                  ]
+}

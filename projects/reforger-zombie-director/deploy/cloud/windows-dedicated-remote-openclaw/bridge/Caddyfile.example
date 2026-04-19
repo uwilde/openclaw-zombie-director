@@ -1,0 +1,13 @@
+# Public HTTPS bridge for the OpenClaw Zombie Director.
+# Run the PowerShell bridge locally on 127.0.0.1:18890 and expose it with Caddy.
+
+director.example.com {
+	encode zstd gzip
+
+	log {
+		output file C:\Logs\director-bridge-access.log
+	}
+
+	@director_api path /reforger/*
+	reverse_proxy @director_api 127.0.0.1:18890
+}

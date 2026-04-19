@@ -1,0 +1,47 @@
+{
+  "project": "OpenClaw Zombie Director",
+  "status": "experimental-release-candidate",
+  "recommendedChannel": "beta",
+  "recommendedTag": "v2026.4.19-beta.1",
+  "recommendedReleaseTitle": "OpenClaw Zombie Director (Experimental) 2026.4.19-beta.1",
+  "recommendedWorkshopTitle": "OpenClaw Zombie Director (Experimental)",
+  "recommendedWorkshopShortDescription": "Experimental zombie director mod for Arma Reforger. Works on local and dedicated servers, with or without OpenClaw or another external AI.",
+  "commit": "b21540fabc",
+  "validatedOn": "2026-04-19",
+  "canonicalPublicStack": [
+    "OpenClaw Zombie Director",
+    "OpenClaw Zombie Director Dead Everon",
+    "Dead Everon",
+    "Bacon Zombies"
+  ],
+  "artifacts": [
+    {
+      "name": "openclaw-zombie-director-public-release.zip",
+      "path": "deploy/public-release/dist/openclaw-zombie-director-public-release.zip",
+      "kind": "public-release-pack"
+    },
+    {
+      "name": "openclaw-zombie-director-cloud-windows-dedicated-remote-openclaw.zip",
+      "path": "deploy/cloud/dist/openclaw-zombie-director-cloud-windows-dedicated-remote-openclaw.zip",
+      "kind": "windows-control-host-bundle"
+    },
+    {
+      "name": "openclaw-zombie-director-cloud-linux-dedicated-remote-openclaw.zip",
+      "path": "deploy/cloud/dist/openclaw-zombie-director-cloud-linux-dedicated-remote-openclaw.zip",
+      "kind": "linux-dedicated-server-bundle"
+    }
+  ],
+  "copySources": {
+    "startHere": "deploy/public-release/START HERE.md",
+    "supported": "deploy/public-release/SUPPORTED.md",
+    "publicStack": "deploy/public-release/PUBLIC STACK.md",
+    "releaseChecklist": "deploy/public-release/RELEASE CHECKLIST.md",
+    "releaseValidation": "deploy/public-release/RELEASE-VALIDATION.md",
+    "workshopReleaseDescription": "deploy/public-release/workshop-release-description.md"
+  },
+  "notes": [
+    "This release is intentionally experimental.",
+    "Recommended as a beta-style publish, not a stable polished release.",
+    "Do not change repo version numbers or create the tag until operator approval is explicit."
+  ]
+}

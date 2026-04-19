@@ -1,0 +1,10 @@
+Bacon_622120A5448725E3_InfectedGroup : "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et" {
+ ID "62651601183F5AEE"
+ m_aUnitPrefabSlots {
+  "{D1A5F120A38B41C4}Prefabs/Compatibility/Bacon/Characters/Variants/OCD_BaconZombie_CIV_Regular1_Compat.et"
+  "{D1A5F120A38B41C5}Prefabs/Compatibility/Bacon/Characters/Variants/OCD_BaconZombie_CIV_Regular2_Compat.et"
+  "{D1A5F120A38B41C6}Prefabs/Compatibility/Bacon/Characters/Variants/OCD_BaconZombie_CIV_Regular3_Compat.et"
+  "{D1A5F120A38B41C7}Prefabs/Compatibility/Bacon/Characters/Variants/OCD_BaconZombie_CIV_Regular4_Compat.et"
+  "{D1A5F120A38B41C8}Prefabs/Compatibility/Bacon/Characters/Variants/OCD_BaconZombie_CIV_Regular5_Compat.et"
+ }
+}

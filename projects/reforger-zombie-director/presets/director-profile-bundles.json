@@ -1,0 +1,208 @@
+{
+  "generatedOn": "2026-04-17",
+  "profiles": [
+    {
+      "id": "everon_bacon_public",
+      "name": "Everon + Bacon Zombies",
+      "mapId": "everon_vanilla",
+      "packIds": [
+        "bacon_zombies"
+      ],
+      "recommended": true,
+      "style": "broad rural hunt",
+      "templatePlan": [
+        {
+          "slot": "walker_basic",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "ambient"
+        },
+        {
+          "slot": "walker_military",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "reinforcement"
+        },
+        {
+          "slot": "heavy_brute",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "special_event"
+        }
+      ]
+    },
+    {
+      "id": "arland_bacon_fast",
+      "name": "Arland + Bacon Zombies",
+      "mapId": "arland_vanilla",
+      "packIds": [
+        "bacon_zombies"
+      ],
+      "recommended": true,
+      "style": "tight reactive pressure",
+      "templatePlan": [
+        {
+          "slot": "walker_basic",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "ambient"
+        },
+        {
+          "slot": "runner_fast",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "field_ambush"
+        },
+        {
+          "slot": "bomber_exploder",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "panic_spike"
+        }
+      ]
+    },
+    {
+      "id": "dead_everon_bacon_concrete",
+      "name": "Dead Everon + Bacon Zombies Concrete Stack",
+      "mapId": "dead_everon",
+      "packIds": [
+        "bacon_zombies"
+      ],
+      "recommended": true,
+      "style": "concrete Dead Everon survival baseline with real Bacon Zombies prefab bindings",
+      "templatePlan": [
+        {
+          "slot": "dead_everon_civilian_drifters",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "ambient"
+        },
+        {
+          "slot": "dead_everon_checkpoint_mix",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "checkpoint_pressure"
+        },
+        {
+          "slot": "dead_everon_quarantine_spike",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "panic_spike"
+        },
+        {
+          "slot": "dead_everon_tier1_sweep",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "sweep_group"
+        },
+        {
+          "slot": "dead_everon_ussr_patrol_large",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "reinforcement_group"
+        },
+        {
+          "slot": "dead_everon_horde_push",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "horde_event"
+        },
+        {
+          "slot": "dead_everon_heavy_brute",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "boss_spike"
+        }
+      ]
+    },
+    {
+      "id": "dead_everon_bacon_toh",
+      "name": "Dead Everon + Bacon Zombies + ToH Zombie",
+      "mapId": "dead_everon",
+      "packIds": [
+        "bacon_zombies",
+        "toh_zombie"
+      ],
+      "recommended": true,
+      "style": "quiet dread with infected military visuals",
+      "templatePlan": [
+        {
+          "slot": "walker_basic",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "ambient"
+        },
+        {
+          "slot": "walker_military",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "checkpoint_pressure"
+        },
+        {
+          "slot": "cosmetic_overlay_ussr",
+          "sourcePackId": "toh_zombie",
+          "spawnMode": "visual_overlay"
+        }
+      ]
+    },
+    {
+      "id": "dead_everon_2_bacon_mutants",
+      "name": "Dead Everon 2 + Bacon Zombies + ARMST Mutants",
+      "mapId": "dead_everon_2",
+      "packIds": [
+        "bacon_zombies",
+        "armst_mutants"
+      ],
+      "recommended": true,
+      "style": "surface sweeps with lab mutants",
+      "templatePlan": [
+        {
+          "slot": "walker_basic",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "ambient"
+        },
+        {
+          "slot": "mutant_stalker",
+          "sourcePackId": "armst_mutants",
+          "spawnMode": "lab_special"
+        },
+        {
+          "slot": "mutant_brute",
+          "sourcePackId": "armst_mutants",
+          "spawnMode": "boss_special"
+        }
+      ]
+    },
+    {
+      "id": "woodbury_bacon_characters",
+      "name": "Woodbury + Bacon Zombies + Zombie Characters",
+      "mapId": "woodbury",
+      "packIds": [
+        "bacon_zombies",
+        "zombie_characters"
+      ],
+      "recommended": true,
+      "style": "town-edge ambushes with elite flavor variants",
+      "templatePlan": [
+        {
+          "slot": "walker_basic",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "ambient"
+        },
+        {
+          "slot": "runner_fast",
+          "sourcePackId": "bacon_zombies",
+          "spawnMode": "street_chase"
+        },
+        {
+          "slot": "elite_variant",
+          "sourcePackId": "zombie_characters",
+          "spawnMode": "elite_mix"
+        }
+      ]
+    },
+    {
+      "id": "wcs_server_stack_generic",
+      "name": "WCS Server Stack Compatibility",
+      "mapId": "everon_vanilla",
+      "packIds": [
+        "bacon_zombies",
+        "wcs_zombies"
+      ],
+      "recommended": false,
+      "style": "server-stack compatibility profile",
+      "templatePlan": [
+        {
+          "slot": "wcs_baseline",
+          "sourcePackId": "wcs_zombies",
+          "spawnMode": "compatibility"
+        }
+      ]
+    }
+  ]
+}

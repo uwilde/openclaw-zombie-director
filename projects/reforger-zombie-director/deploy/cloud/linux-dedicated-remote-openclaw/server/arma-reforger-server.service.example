@@ -1,0 +1,15 @@
+[Unit]
+Description=Arma Reforger Dedicated Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=steam
+WorkingDirectory=/srv/arma-reforger-server
+ExecStart=/bin/bash /opt/openclaw-zombie-director-cloud/server/start-reforger-server.sh /opt/openclaw-zombie-director-cloud/server/arma-reforger-server.env
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

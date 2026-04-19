@@ -1,0 +1,11 @@
+{
+  "kind": "openclaw-zombie-director.rest-bridge-override",
+  "version": 1,
+  "enabled": 1,
+  "baseUrl": "https://director.example.com/",
+  "hintRoute": "reforger/zombie-director/hints",
+  "snapshotRoute": "reforger/zombie-director/snapshot",
+  "token": "replace-with-a-long-random-shared-token",
+  "pollIntervalSeconds": 0.75,
+  "postSnapshots": 1
+}

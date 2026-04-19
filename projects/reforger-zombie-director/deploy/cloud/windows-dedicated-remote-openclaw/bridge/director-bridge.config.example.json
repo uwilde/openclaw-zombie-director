@@ -1,0 +1,9 @@
+{
+  "listenPrefix": "http://127.0.0.1:18890/",
+  "clientBaseUrl": "http://127.0.0.1:18890/",
+  "publicBaseUrl": "https://director.example.com/",
+  "stateRoot": "%LOCALAPPDATA%\\OpenClawDirectorBridgeCloud",
+  "requireToken": true,
+  "allowHealthWithoutToken": true,
+  "token": "replace-with-a-long-random-shared-token"
+}

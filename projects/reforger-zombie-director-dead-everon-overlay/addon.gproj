@@ -1,0 +1,18 @@
+GameProject {
+ ID "OpenClaw-Zombie-Director-Dead-Everon"
+ GUID "3A1D4E6C8B7F2059"
+ TITLE "OpenClaw Zombie Director - Dead Everon Overlay"
+ Dependencies {
+  "58D0FB3206B6F859"
+  "6F8B1A34C9D24011"
+  "5D58A217A9611AFB"
+  "622120A5448725E3"
+ }
+ Configurations {
+  GameProjectConfig PC { }
+  GameProjectConfig XBOX_ONE { }
+  GameProjectConfig XBOX_SERIES { }
+  GameProjectConfig PS4 { }
+  GameProjectConfig HEADLESS { }
+ }
+}

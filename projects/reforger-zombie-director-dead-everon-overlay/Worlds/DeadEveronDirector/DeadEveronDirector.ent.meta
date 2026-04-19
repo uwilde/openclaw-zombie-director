@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{A6C7E2F19B4D4035}Worlds/DeadEveronDirector/DeadEveronDirector.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}
