@@ -31,6 +31,11 @@
       "kind": "linux-dedicated-server-bundle"
     }
   ],
+  "workshopArtwork": {
+    "name": "openclaw-zombie-director-workshop-cover.png",
+    "path": "deploy/public-release/assets/openclaw-zombie-director-workshop-cover.png",
+    "kind": "workshop-cover"
+  },
   "copySources": {
     "startHere": "deploy/public-release/START HERE.md",
     "supported": "deploy/public-release/SUPPORTED.md",

@@ -35,6 +35,7 @@ Use these files directly:
 - [openclaw-zombie-director-public-release.zip](X:/OpenClaw/workspace/projects/reforger-zombie-director/deploy/public-release/dist/openclaw-zombie-director-public-release.zip)
 - [openclaw-zombie-director-cloud-windows-dedicated-remote-openclaw.zip](X:/OpenClaw/workspace/projects/reforger-zombie-director/deploy/cloud/dist/openclaw-zombie-director-cloud-windows-dedicated-remote-openclaw.zip)
 - [openclaw-zombie-director-cloud-linux-dedicated-remote-openclaw.zip](X:/OpenClaw/workspace/projects/reforger-zombie-director/deploy/cloud/dist/openclaw-zombie-director-cloud-linux-dedicated-remote-openclaw.zip)
+- [openclaw-zombie-director-workshop-cover.png](X:/OpenClaw/workspace/projects/reforger-zombie-director/deploy/public-release/assets/openclaw-zombie-director-workshop-cover.png)
 
 ## Credential-Gated Steps Remaining
 

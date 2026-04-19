@@ -23,6 +23,7 @@ $releaseValidation = Join-Path $releaseRoot "RELEASE-VALIDATION.md"
 $publishManifest = Join-Path $releaseRoot "PUBLISH MANIFEST.json"
 $publishChecklist = Join-Path $releaseRoot "PUBLISH CHECKLIST.md"
 $workshopCopy = Join-Path $releaseRoot "workshop-release-description.md"
+$workshopCover = Join-Path $releaseRoot "assets\openclaw-zombie-director-workshop-cover.png"
 
 New-Item -ItemType Directory -Force -Path $distRoot | Out-Null
 if (Test-Path -LiteralPath $zipPath) {
@@ -45,6 +46,7 @@ $items = @(
 	@{ Source = $publishManifest; Destination = "PUBLISH MANIFEST.json" },
 	@{ Source = $publishChecklist; Destination = "PUBLISH CHECKLIST.md" },
 	@{ Source = $workshopCopy; Destination = "workshop-release-description.md" },
+	@{ Source = $workshopCover; Destination = "assets\openclaw-zombie-director-workshop-cover.png" },
 	@{ Source = $serverQuickStart; Destination = "docs\server-operator-quick-start.md" },
 	@{ Source = $hostingQuickStart; Destination = "docs\hosting-panel-quick-start.md" },
 	@{ Source = $publishSafeDefaults; Destination = "docs\publish-safe-scenario-defaults.md" },
